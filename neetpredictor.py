@@ -2,15 +2,18 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import streamlit as st
+import os
+from dotenv import load_dotenv
+
 import requests
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.metrics import classification_report
 
-# --- Quiz Performance Analysis Functions ---
+# --- Quiz Performance Analysis Functions ---  
 def fetch_data():
-    current_quiz_url = "https://www.jsonkeeper.com/b/LLQT"
-    hist_data_url = "https://api.jsonserve.com/XgAgFJ"
+    current_quiz_url = os.getenv("CURRENT_QUIZ_URL")
+    hist_data_url = os.getenv("HISTORICAL_DATA_URL")
     current_quiz_data = requests.get(current_quiz_url, verify=False).json()
     hist_data = requests.get(hist_data_url, verify=False).json()
     hist_df = pd.DataFrame(hist_data)
