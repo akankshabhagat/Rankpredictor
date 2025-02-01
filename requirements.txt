@@ -9,3 +9,5 @@ transformers
 tensorflow
 torch
 torchvision
+python-dotenv
+

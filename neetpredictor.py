@@ -221,5 +221,8 @@ def main():
     college = predict_college_by_rank(predicted_rank, colleges)
     st.write(f"Most likely college admission: {college}")
 
+    print("Matplotlib is working!")
+
+
 if __name__ == '__main__':
     main()
