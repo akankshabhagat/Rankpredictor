@@ -12,7 +12,7 @@ from sklearn.metrics import classification_report
 
 # --- Quiz Performance Analysis Functions ---  
 def fetch_data():
-    current_quiz_url = os.getenv("CURRENT_QUIZ_URL")
+    current_quiz_url = os.getenv("QUIZ_URL")
     hist_data_url = os.getenv("HISTORICAL_DATA_URL")
     current_quiz_data = requests.get(current_quiz_url, verify=False).json()
     hist_data = requests.get(hist_data_url, verify=False).json()
