@@ -189,15 +189,7 @@ def main():
     st.pyplot(plt.gcf())
     plt.clf()
 
-    st.subheader("Distribution of Quiz Scores")
-    plt.figure(figsize=(10, 6))
-    plt.hist(historical_df['score'], bins=20, alpha=0.7, color='blue', edgecolor='black')
-    plt.title('Histogram of Quiz Scores')
-    plt.xlabel('Score')
-    plt.ylabel('Frequency')
-    plt.grid(axis='y', linestyle='--', alpha=0.7)
-    st.pyplot(plt.gcf())
-    plt.clf()
+    
     
     st.subheader("AI-Generated Insights for Weak Topics")
     weak_topics_insights = generate_structured_insights(current_quiz_data, historical_df, perf_model)
@@ -219,6 +211,16 @@ def main():
         plt.xlabel('Date')
         plt.ylabel('Score')
         plt.legend()
+        st.pyplot(plt.gcf())
+        plt.clf()
+
+        st.subheader("Distribution of Quiz Scores")
+        plt.figure(figsize=(10, 6))
+        plt.hist(historical_df['score'], bins=20, alpha=0.7, color='blue', edgecolor='black')
+        plt.title('Histogram of Quiz Scores')
+        plt.xlabel('Score')
+        plt.ylabel('Frequency')
+        plt.grid(axis='y', linestyle='--', alpha=0.7)
         st.pyplot(plt.gcf())
         plt.clf()
     
