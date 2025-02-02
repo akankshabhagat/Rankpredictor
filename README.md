@@ -65,29 +65,21 @@ Once the app is running, open **http://localhost:8501** in your browser.
 - Suggests the most likely college based on historical cutoffs.
 
 ---
+## video 
+https://vimeo.com/1052695509/a7d32af9df
 
 ## 📸 Screenshots
+Aiinsights.png
 
-### **1️⃣ Overall Performance Trend**
-![Quiz Performance Graph](screenshots/quiz_performance.png)
-
-### **2️⃣ Weak Topics Insights**
-![Weak Topics Insights](screenshots/weak_topics.png)
-
-### **3️⃣ Rank Prediction & College Suggestion**
-![Rank Prediction](screenshots/rank_prediction.png)
-
+histogramquizscores.png
+historicalquizscores.png
+Studentrankandcolleg.png
 ---
 
 ## 🏆 Future Enhancements
 - 🔹 Improve model accuracy with more historical data.
 - 🔹 Add a **personalized dashboard** for tracking student progress.
 - 🔹 Integrate **adaptive learning suggestions** based on weak areas.
-
----
-
-## 📜 License
-This project is **open-source** and free to use for educational purposes.
 
 ---
 
