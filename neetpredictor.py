@@ -168,7 +168,7 @@ def predict_college_by_rank(predicted_rank, colleges):
 
 # --- Streamlit App ---
 def main():
-    st.title("NEET Testline Analysis")
+    st.title("Student Rank Analysis")
     
     # Quiz performance analysis
     st.subheader("Fetching and Preparing Data")
@@ -186,6 +186,16 @@ def main():
     plt.xlabel('Date')
     plt.ylabel('Score')
     plt.legend()
+    st.pyplot(plt.gcf())
+    plt.clf()
+
+    st.subheader("Distribution of Quiz Scores")
+    plt.figure(figsize=(10, 6))
+    plt.hist(historical_df['score'], bins=20, alpha=0.7, color='blue', edgecolor='black')
+    plt.title('Histogram of Quiz Scores')
+    plt.xlabel('Score')
+    plt.ylabel('Frequency')
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
     st.pyplot(plt.gcf())
     plt.clf()
     
@@ -221,7 +231,7 @@ def main():
     college = predict_college_by_rank(predicted_rank, colleges)
     st.write(f"Most likely college admission: {college}")
 
-    print("Matplotlib is working!")
+  
 
 
 if __name__ == '__main__':
