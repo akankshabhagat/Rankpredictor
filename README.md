@@ -69,11 +69,9 @@ Once the app is running, open **http://localhost:8501** in your browser.
 https://vimeo.com/1052695509/a7d32af9df
 
 ## 📸 Screenshots
-Aiinsights.png
+![Screenshot 2025-02-02 105402](https://github.com/user-attachments/assets/55a59554-cbce-4e86-9af9-f06aac671527)
 
-histogramquizscores.png
-historicalquizscores.png
-Studentrankandcolleg.png
+
 ---
 
 ## 🏆 Future Enhancements
